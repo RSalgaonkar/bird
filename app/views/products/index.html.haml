@@ -1,1 +1,45 @@
-%p Create and show the products
+.row
+  .span12
+    - if flash[:notice].present?
+      = flash[:notice]
+
+    %p.lead BirdVision Coding Problem
+
+    = form_for Product.new, class: 'form-horizontal', id: "productform", method: :post do |p|
+      %fieldset
+        %legend Create Product Codes
+        .control-group
+          %label.control-label Name
+          .controls
+            = p.text_field :name
+        .control-group
+          %label.control-label Description
+          .controls
+            = p.text_field :description
+        .control-group
+          %label.control-label Select Master Product Code
+          .controls
+            = p.select :master_product_id, options_for_select(Product.order("name ASC").map {|pt| [pt.name, pt.id]}) if Product.any?
+        .control-group
+          .controls
+            = p.submit "Create Product", class: "btn btn-primary"
+
+    - if @products.present?
+      %table.table
+        %caption
+          %h4 List of Products
+        %thead
+          %tr
+            %th Product Name
+            %th Master Product
+            %th Sub Products
+        %tbody
+          - @products.each do |p|
+            %tr
+              %td
+                = p.name
+              %td
+                = p.master_product.name if p.master_product.present?
+              %td
+                - p.sub_products.each do |sp|
+                  = sp.name if sp.present?

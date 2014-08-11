@@ -8,6 +8,8 @@ gem 'pg'
 gem 'ancestry'
 gem 'haml'
 gem 'protected_attributes'
+gem "twitter-bootstrap-rails"
+gem 'less-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -46,3 +48,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'guard'
+  gem 'shoulda-matchers'
+end

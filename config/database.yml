@@ -22,10 +22,10 @@ test:
   pool: 5
   timeout: 5000
 
-production:
-  adapter: postgresql
-  database: bird
-  username: admin
-  password: admin
-  pool: 5
-  timeout: 5000
+# production:
+#   adapter: postgresql
+#   database: bird
+#   username: admin
+#   password: admin
+#   pool: 5
+#   timeout: 5000
