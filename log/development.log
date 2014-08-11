@@ -8148,3 +8148,359 @@ ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.ma
   Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
   Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
   Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+Processing by ProductsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "products"[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY name ASC
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" = $1  [["master_product_id", 20]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = $1 ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" = $1  [["master_product_id", 21]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = $1 ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" = $1  [["master_product_id", 22]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = $1 ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" = $1  [["master_product_id", 23]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = $1 ORDER BY "products"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" = $1  [["master_product_id", 24]]
+  Rendered products/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2014-08-11 20:55:39 +0530
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/rashmith/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/rashmith/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/rashmith/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/rashmith/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.2ms)
+  [1m[35mProduct Load (2.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" = 0[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" = 0
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" = 0[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (48.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = '' or master_product_id = nil) ORDER BY "products"."id" ASC LIMIT 1[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: ""
+LINE 1: ...ts".* FROM "products"  WHERE (master_product_id = '' or  mas...
+                                                             ^
+: SELECT  "products".* FROM "products"  WHERE (master_product_id = '' or  master_product_id = nil)  ORDER BY "products"."id" ASC LIMIT 1
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = nil) ORDER BY "products"."id" ASC LIMIT 1[0m
+PG::UndefinedColumn: ERROR:  column "nil" does not exist
+LINE 1: ...ts".* FROM "products"  WHERE (master_product_id = nil)  ORDE...
+                                                             ^
+: SELECT  "products".* FROM "products"  WHERE (master_product_id = nil)  ORDER BY "products"."id" ASC LIMIT 1
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = 'nil') ORDER BY "products"."id" ASC LIMIT 1[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: "nil"
+LINE 1: ...ts".* FROM "products"  WHERE (master_product_id = 'nil')  OR...
+                                                             ^
+: SELECT  "products".* FROM "products"  WHERE (master_product_id = 'nil')  ORDER BY "products"."id" ASC LIMIT 1
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL)[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "products" WHERE (master_product_id != NULL)[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "products" WHERE (master_product_id = NULL or master_product_id ='')[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: ""
+LINE 1: ..."  WHERE (master_product_id = NULL or master_product_id ='')
+                                                                    ^
+: SELECT COUNT(*) FROM "products"  WHERE (master_product_id = NULL or master_product_id ='')
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL or master_product_id ='')[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: ""
+LINE 1: ..."  WHERE (master_product_id = NULL or master_product_id ='')
+                                                                    ^
+: SELECT "products".* FROM "products"  WHERE (master_product_id = NULL or master_product_id ='')
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL or master_product_id = '')[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: ""
+LINE 1: ...  WHERE (master_product_id = NULL or master_product_id = '')
+                                                                    ^
+: SELECT "products".* FROM "products"  WHERE (master_product_id = NULL or master_product_id = '')
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL or master_product_id = '')[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: ""
+LINE 1: ...  WHERE (master_product_id = NULL or master_product_id = '')
+                                                                    ^
+: SELECT "products".* FROM "products"  WHERE (master_product_id = NULL or master_product_id = '')
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = '')[0m
+PG::InvalidTextRepresentation: ERROR:  invalid input syntax for integer: ""
+LINE 1: ..."products".* FROM "products"  WHERE (master_product_id = '')
+                                                                    ^
+: SELECT "products".* FROM "products"  WHERE (master_product_id = '')
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id = NULL)
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id = NULL)
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id IS NULL)
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id IS NULL)
+  [1m[36mProduct Load (1.1ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL)[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL)[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id NOT NULL)[0m
+PG::SyntaxError: ERROR:  syntax error at or near "NULL"
+LINE 1: ...ducts".* FROM "products"  WHERE (master_product_id NOT NULL)
+                                                                  ^
+: SELECT "products".* FROM "products"  WHERE (master_product_id NOT NULL)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL)[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id != NULL)[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL or master_product_id == '')[0m
+PG::UndefinedFunction: ERROR:  operator does not exist: integer == unknown
+LINE 1: ...WHERE (master_product_id IS NULL or master_product_id == '')
+                                                                 ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "products".* FROM "products"  WHERE (master_product_id IS NULL or master_product_id == '')
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL or master_product_id IS '')[0m
+PG::SyntaxError: ERROR:  syntax error at or near "''"
+LINE 1: ...WHERE (master_product_id IS NULL or master_product_id IS '')
+                                                                    ^
+: SELECT "products".* FROM "products"  WHERE (master_product_id IS NULL or master_product_id IS '')
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL) ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id == NULL)[0m
+PG::UndefinedFunction: ERROR:  operator does not exist: integer == unknown
+LINE 1: ...oducts".* FROM "products"  WHERE (master_product_id == NULL)
+                                                               ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "products".* FROM "products"  WHERE (master_product_id == NULL)
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id == NULL)[0m
+PG::UndefinedFunction: ERROR:  operator does not exist: integer == unknown
+LINE 1: ...oducts".* FROM "products"  WHERE (master_product_id == NULL)
+                                                               ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+: SELECT "products".* FROM "products"  WHERE (master_product_id == NULL)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id = NULL)[0m
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."master_product_id" IS NULL[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE (master_product_id IS NULL)[0m
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id IS NULL)
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" WHERE (master_product_id IS NULL)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (1.3ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.1ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY "products"."id" DESC LIMIT 1[0m
+  [1m[35mProduct Load (1.0ms)[0m  SELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT 1
